@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
                 val clip = clipboard.primaryClip
                 val text = if (clip != null && clip.itemCount > 0) clip.getItemAt(0).text.toString() else ""
                 binding.editor.setText(text)
+                if (text.isNotEmpty()) Toast.makeText(this@MainActivity, "Beillesztve!", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnClear.setOnClickListener {
             binding.editor.text.clear()
             clipboard.setPrimaryClip(ClipData.newPlainText("", ""))
+            Toast.makeText(this, "Memória törölve!", Toast.LENGTH_SHORT).show()
         }
     }
 

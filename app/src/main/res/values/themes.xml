@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#6750A4</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:statusBarColor">#6750A4</item>
+        <item name="android:navigationBarColor">#F7F2FA</item>
+        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+    </style>
+</resources>

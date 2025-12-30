@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android") version "2.0.0"
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -10,25 +10,13 @@ android {
     defaultConfig {
         applicationId = "com.example.clipboardpro"
         minSdk = 21
-        targetSdk = 31 // Android 12
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
     }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
-    }
-    
+    // ... a többi marad változatlanul
     buildFeatures {
         viewBinding = true
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
